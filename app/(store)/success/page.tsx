@@ -5,7 +5,7 @@ import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 import React, { useEffect } from "react";
 
-const sucessPage = () => {
+const SucessPage = () => {
   const searchParams = useSearchParams();
   const orderNumber = searchParams.get("orderNumber");
   const clearBasket = useBasketStore((state) => state.clearBasket);
@@ -54,4 +54,4 @@ const sucessPage = () => {
   );
 };
 
-export default sucessPage;
+export default SucessPage;
