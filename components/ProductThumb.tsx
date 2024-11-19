@@ -8,7 +8,7 @@ const ProductThumb = ({ product }: { product: Product }) => {
   return (
     <Link
       href={`/product/${product.slug?.current}`}
-      className={`group flex flex-col rounded-lg bg-white border border-gray-200 shadow-sm hover:shadow-md transition-all duration-200 overflow-hidden ${isOutOfStock ? "opacity-50" : ""}`}>
+      className={` flex flex-col rounded-lg bg-white border border-gray-200 shadow-sm hover:shadow-md transition-all duration-200 overflow-hidden ${isOutOfStock ? "opacity-50" : ""}`}>
       <div className="relative aspect-square w-full h-full overflow-hidden">
         {product.image && (
           <Image
